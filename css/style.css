@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing; border-box;
+  -webkit-box-sizing; border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%
+}
+
+h1 {
+  font-size: 2em
+}
+
+h2 {
+  font-size: 3em
+}
+h3 {
+  font-size: 2.5em
+}
+h4 {
+  font-size: 1.5em
+}
+h5 {
+  font-size: 2em
+}
+
+/* Exercise Style */
+.block {
+  border: 1em solid black;
+  float: left;
+  min-height: 30em
+}
+
+/* mobile first code */
+.block--double, .block--triple {
+  width: 100%;
+}
+
+.block--triple {
+   background: #43AA8B;
+   /* width: 33.33% */
+}
+
+.block--double {
+  background: #FF6F59;
+  /* width: 50% */
+}
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+ .block--double {
+   width: 50%;
+ }
+ .block--triple {
+    width: 33.33%
+ }
+}
